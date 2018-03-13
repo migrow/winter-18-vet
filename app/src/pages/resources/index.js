@@ -9,7 +9,7 @@ const Resources = props => {
     <div>
       <h1>Resources</h1>
       <div>
-        <ol>{map(r => <li>r.name</li>, props.resources)}</ol>
+        <ol>{map(r => <li>{r.name}</li>, props.resources)}</ol>
       </div>
     </div>
   )
