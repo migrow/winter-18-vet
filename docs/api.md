@@ -14,6 +14,7 @@ A category contains the following properties:
 {
   "_id": "category_basic-needs-assistance",
   "name": "Basic Needs Assistance",
+  "shortDesc": "shelter, domestic violence, food, financial assistance"
   "desc":
     "BasicNeeds Assistance includes organizations that provide one or more of the following services: shelter facilities for the homeless and for those escaping situations of domestic violence, food/supplemental nutrition resources, and single-transaction emergency financial assistance in cases of involuntary hardship.",
   "type": "category",
@@ -29,7 +30,7 @@ A category contains the following properties:
 "type": "resource",
 "categoryId": "category_basic-needs-assistance",
 "name": "VA Homeless Prevention",
-"formalName": " VA Homeless Prevention Program & Walk-In Clinic",
+"formalName": "VA Homeless Prevention Program & Walk-In Clinic",
 "shortDesc": "Walk in clinic, re-housing assistance",
 "purpose": "The Ralph H. Johnson Veterans Affairs Medical Center offers a walk-in clinic for veterans searching for re-housing assistance and means to prevent homelessness. In addition to referral services, the walk-in clinic offers basic outpatient medical care",
 "website": " http://www.charleston.va.gov/services/homeless/index.asp",
