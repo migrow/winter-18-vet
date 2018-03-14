@@ -8,6 +8,8 @@ module.exports = app => {
       include_docs: true,
       startkey: 'category_',
       endkey: 'category_\ufff0'
-    }).then(categories => res.send(categories))
+    })
+      .then(categories => res.send(categories))
+      .catch(err => console.log(err))
   })
 }
