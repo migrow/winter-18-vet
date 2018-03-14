@@ -14,17 +14,6 @@ app.use(cors({ credentials: true }))
 app.get('/', (req, res) => {
   res.status(200).send('Welcome to the Veterans API.')
 })
-app.get('/categories', (req, res) => {
-  const options = {
-    include_docs: true,
-    startkey: 'category_',
-    endkey: 'category_\ufff0'
-  }
-  dalHelper
-    .allDocs(options)
-    .then(categories => res.send(categories))
-    .catch(err => console.log('This sucks', err))
-})
 
 categories(app)
 resources(app)
