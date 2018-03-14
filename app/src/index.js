@@ -6,11 +6,28 @@ import registerServiceWorker from './registerServiceWorker'
 import store from './store'
 import { Provider } from 'react-redux'
 import { getResources } from './action-creators/resources'
+import 'typeface-roboto'
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
+import indigo from 'material-ui/colors/indigo'
+import purple from 'material-ui/colors/purple'
+import red from 'material-ui/colors/red'
+
+const customTheme = createMuiTheme({
+  palette: {
+    primary: indigo,
+    secondary: purple,
+    error: red,
+    contrastThreshold: 3,
+    tonalOffset: 0.2
+  }
+})
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <MuiThemeProvider theme={customTheme}>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </MuiThemeProvider>,
   document.getElementById('root')
 )
 registerServiceWorker()

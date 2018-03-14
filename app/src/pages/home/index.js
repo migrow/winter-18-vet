@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import Button from 'material-ui/Button'
 
 const Home = props => {
   return (
@@ -11,6 +12,10 @@ const Home = props => {
           <Link to="/resources">Resources</Link>
         </li>
       </ul>
+      <div>
+        <Button color="primary">Primary</Button>
+        <Button color="secondary">Secondary</Button>
+      </div>
     </div>
   )
 }
