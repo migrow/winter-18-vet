@@ -4,9 +4,9 @@ PouchDB.plugin(require('pouchdb-find'))
 const HTTPError = require('node-http-error')
 const { pluck } = require('ramda')
 
-console.log(`The db is ${process.env.COUCH_URL}${process.env.COUCH_DBNAME}`)
+console.log(`The db is ${process.env.COUCH_URL}`)
 
-const db = new PouchDB(`${process.env.COUCH_URL}${process.env.COUCH_DBNAME}`)
+const db = new PouchDB(`${process.env.COUCH_URL}`)
 
 const allDocs = options => {
   console.log('dalHelper allDocs() options', options)
