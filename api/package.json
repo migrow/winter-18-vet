@@ -10,5 +10,11 @@
     "pouchdb-core": "^6.4.3",
     "pouchdb-find": "^6.4.3",
     "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "scripts": {
+    "start": "nodemon server"
   }
 }
